@@ -1,0 +1,20 @@
+.calendarHeader {
+    width: calc(100vh - 60px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); 
+    gap: 5px;
+
+    .cell {
+        padding: 10px;
+        justify-self: end;
+    }
+}
+
+.calendarGrid {
+    width: calc(100vh - 60px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}

@@ -1,0 +1,44 @@
+.eventWrapper {
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .eventInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+        p {
+            margin: 0;
+        }
+
+        .dscription {
+            color: #595959;
+        }
+        .period {
+            color: #929292;
+        }
+    }
+
+    .eventControls {
+        display: flex;
+        gap: 10px;
+
+        hr {
+            height: 15px;
+        }
+
+        button {
+            margin: 0;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            color: #0090FF;
+            cursor: pointer;
+        }
+    }
+}

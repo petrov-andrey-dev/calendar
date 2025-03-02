@@ -1,0 +1,32 @@
+.dayWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+
+    .addButton {
+        padding: 10px 20px;
+        align-self: flex-start;
+        display: flex;
+        background-color: #009EFF;
+        border: none;
+        border-radius: 5px;
+        gap: 10px;
+
+        p {
+            margin: 0;
+            color: white;
+        }
+    }
+
+    ul {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+}

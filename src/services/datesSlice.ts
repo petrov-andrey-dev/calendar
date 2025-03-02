@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import moment from "moment";
 import { getMonthViewDates } from "../utils/calendar";
-import { ViewType } from './../types/calendar';
+import { ViewType } from '../types/types';
 
 const initialState = {
     today: moment(),

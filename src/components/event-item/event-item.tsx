@@ -1,10 +1,11 @@
 import { TEvent } from "../../services/eventsSlice";
+import { ModalType } from "../../types/types";
 import s from './event-item.module.scss';
 
 type EventItemProps = {
     date: string,
     event: TEvent,
-    handleModalOpen: (type: 'add' | 'edit', event: TEvent) => void,
+    handleModalOpen: (type: ModalType, event: TEvent) => void,
     handleOnDelete: (date: string, event:TEvent) => void
 }
 
@@ -16,7 +17,7 @@ const EventItem: React.FC<EventItemProps> = ({date, event, handleModalOpen, hand
                 <p className={s.period}>{`${event.startTime} - ${event.endTime}`}</p>
             </div>
             <div className={s.eventControls}>
-                <button onClick={() => handleModalOpen('edit', event)}>Edit</button> 
+                <button onClick={() => handleModalOpen(ModalType.EDIT, event)}>Edit</button> 
                 <hr />
                 <button onClick={() => handleOnDelete(date as string, event)}>Delete</button>
             </div>

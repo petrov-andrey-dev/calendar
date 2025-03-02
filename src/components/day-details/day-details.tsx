@@ -8,6 +8,7 @@ import EventItem from "../event-item/event-item";
 import EventForm from "../event-form/event-form";
 import Modal from "../modal/modal";
 import s from './day-details.module.scss';
+import { ModalType } from "../../types/types";
 
 const DayDetails: React.FC = () => {
     const { isActive } = useAppSelector(state => state.modal);
@@ -19,7 +20,7 @@ const DayDetails: React.FC = () => {
 
     const dateEvents = events[moment(date).format('YYYY-MM-DD')] || []
 
-    const handleModalOpen = (modalType: 'add' | 'edit', data?: TEvent) => {
+    const handleModalOpen = (modalType: ModalType, data?: TEvent) => {
         dispatch(openModal({ modalType, data }))
     };
 
@@ -35,7 +36,7 @@ const DayDetails: React.FC = () => {
     return (
         <div className={s.dayWrapper}>
             <div>{title}</div>
-            <button onClick={() => handleModalOpen('add')} className={s.addButton}>
+            <button onClick={() => handleModalOpen(ModalType.ADD)} className={s.addButton}>
                 <p>+</p>
                 <p>Add event</p>
             </button>

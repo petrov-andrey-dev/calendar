@@ -1,9 +1,10 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { TEvent } from "./eventsSlice";
+import { ModalType } from "../types/types";
 
 export type TModalSlice = {
     isActive: boolean;
-    modalType: 'add' | 'edit' | null;
+    modalType: ModalType | null;
     data?: TEvent;
 }
 

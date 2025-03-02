@@ -8,10 +8,11 @@ import { TEvent } from '../../services/eventsSlice';
 import moment from 'moment';
 import { toast } from 'react-toastify';
 import { useState } from 'react';
+import { ModalType } from '../../types/types';
 
 const EventForm: React.FC = () => {
     const { modalType, data } = useAppSelector(state => state.modal)
-    const initialValue = modalType === 'edit' && data
+    const initialValue = modalType === ModalType.EDIT && data
         ? data
         : {
             id: moment().unix(),
@@ -46,7 +47,7 @@ const EventForm: React.FC = () => {
         console.log(!validate());
         
         if (validate()) return
-        if (modalType === 'edit') {
+        if (modalType === ModalType.EDIT) {
             if (date) dispatch(updateEvent({ date, event: values }))
             toast.info('Event updated', { position: "bottom-center" })
         } else {

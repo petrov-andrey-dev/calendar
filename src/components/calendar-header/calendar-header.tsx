@@ -2,7 +2,7 @@ import { useAppDispatch, useAppSelector } from '../../hooks/hooks';
 import moment from 'moment';
 import s from './calendar-header.module.scss'
 import { setMonth, setYear } from '../../services/datesSlice';
-import { ViewType } from '../../types/calendar';
+import { ViewType } from '../../types/types';
 
 const CalendarHeader: React.FC = () => {
     const { selectedYear, selectedMonth, viewMode } = useAppSelector(state => state.dates);

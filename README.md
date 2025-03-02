@@ -31,5 +31,5 @@ npm run dev
 
 **GitHub**
 
-+ [Ссылка на опубликованный проект]()
++ [Ссылка на опубликованный проект](https://petrov-andrey-dev.github.io/calendar/)
 

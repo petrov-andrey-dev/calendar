@@ -14,11 +14,9 @@ const DayDetails: React.FC = () => {
     const { isActive } = useAppSelector(state => state.modal);
     const { date } = useParams();
     const events = useAppSelector(state => state.events);
-    const title = moment(date).format('dddd, MMMM Do YYYY')
-    
+    const title = moment(date).format('dddd, MMMM Do YYYY');
     const dispatch = useAppDispatch();
-
-    const dateEvents = events[moment(date).format('YYYY-MM-DD')] || []
+    const dateEvents = events[moment(date).format('YYYY-MM-DD')] || [];
 
     const handleModalOpen = (modalType: ModalType, data?: TEvent) => {
         dispatch(openModal({ modalType, data }))

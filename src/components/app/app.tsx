@@ -33,7 +33,6 @@ const App: React.FC = () => {
     return () => clearInterval(interval)
   }, [events, today])
 
-
   return (
     <div className={s.app}>
       <ToastContainer position='top-right' autoClose={2000} hideProgressBar={true} />

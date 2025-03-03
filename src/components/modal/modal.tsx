@@ -1,5 +1,5 @@
 import { ReactNode, useEffect } from "react";
-import s from './modal.module.css';
+import s from './modal.module.scss';
 
 
 type TModalProps = {

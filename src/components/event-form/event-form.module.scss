@@ -7,16 +7,16 @@
 
     input {
         padding: 10px;
-        border: 1px solid #D9D9D9;
+        border: 1px solid $light-gray;
         border-radius: 4px;
-    }
-
-    .error {
-        border-color: red;
     }
 
     input[type='text'] {
         width: 100%;
+    }
+
+    .error {
+        border-color: $red;
     }
 
     .remind {
@@ -31,35 +31,33 @@
         }
 
         select {
-            background-color: white;
-            border: 1px solid #D9D9D9;
-            border-radius: 6px;
+            background-color: $white;
+            border: 1px solid $light-gray;
+            border-radius: 4px;
             padding: 10px 5px;
-            color: #595959;
+            color: $dark-gray;
             cursor: pointer;
     
             &:focus {
                 outline: none;
-                border-color: #007bff;
+                border-color: $blue;
             }
     
             option {
-                background-color: white;
-                color: #595959;
+                background-color: $white;
+                color: $dark-gray;
             }
         }
     }
 
-    
-    
     button {
         padding: 10px 20px;
-        align-self: flex-start;
         display: flex;
-        background-color: #009EFF;
+        align-self: flex-start;
+        background-color: $blue;
         border: none;
-        border-radius: 5px;
-        color: white;
+        border-radius: 4px;
+        color: $white;
     }
 }
 

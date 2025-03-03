@@ -43,9 +43,6 @@ const EventForm: React.FC = () => {
 
     const onSubmitButton = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        console.log(errors)
-        console.log(!validate());
-        
         if (validate()) return
         if (modalType === ModalType.EDIT) {
             if (date) dispatch(updateEvent({ date, event: values }))
@@ -93,7 +90,6 @@ const EventForm: React.FC = () => {
                     </select>
                 )}
             </div>
-
             <button>Submit</button>
         </form>
     )

@@ -5,4 +5,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: 'calendar',
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@use "/src/styles/variables.scss" as *;`
+      }
+    }
+  }
 })

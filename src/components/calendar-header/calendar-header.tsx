@@ -14,7 +14,6 @@ const CalendarHeader: React.FC = () => {
         name: moment().month(i).format("MMM"),
         index: i
     }));
-    
 
     const onChangeYear = (e: React.ChangeEvent<HTMLSelectElement>) => {
         dispatch(setYear(Number(e.target.value)))

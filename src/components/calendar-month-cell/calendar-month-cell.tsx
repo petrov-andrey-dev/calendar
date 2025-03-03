@@ -25,7 +25,7 @@ const CalendarMonthCell: React.FC<CalendarMonthCellProps> = ({ day }) => {
             <div className={`${s.date} ${isToday} ${isNotSelectedMonth}`}>{day.format('DD')}</div>
             <ul>
                 {dateEvents && dateEvents.slice(0, 3).map(event => (
-                    <li><p>{event.description}</p></li>
+                    <li key={event.id}><p>{event.description}</p></li>
                 ))}
             </ul>
 

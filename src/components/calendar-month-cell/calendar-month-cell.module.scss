@@ -1,7 +1,7 @@
 .day {
     display: flex;
     flex-direction: column;
-    border-top: 3px solid #E8E8E8;
+    border-top: 3px solid $light-gray;
     aspect-ratio: 1/1;
     text-decoration: none;
     align-items: flex-start;
@@ -16,12 +16,12 @@
     }
     
     .today {
-        background-color: #0090FF;
-        color: white;
+        background-color: $blue;
+        color: $white;
     }
     
     .isNotSelectedMonth {
-        color: #E8E8E8;
+        color: $light-gray;
     }
     
     ul {
@@ -32,23 +32,22 @@
 
         li {
             margin: 0;
-            color: #00C900;
+            color: $green;
 
             p {
                 margin: 0;
                 max-width: 70px;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                color: #595959;
+                color: $dark-gray;
             }
         }
     }
 }
 
 .day:hover {
-    border-top: 3px solid #009EFF;
-    background-color: #E2F7FF;
-    color: #0090FF;
+    border-top: 3px solid $blue;
+    background-color: $light-blue;
 }
 
 

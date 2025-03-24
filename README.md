@@ -15,13 +15,7 @@ npm run dev
 + Уведомления о создании/изменении/удалении событий
 + Напоминание о скором начале события и начале события
 
-### Исполнитель
-
-+ Андрей Петров  
-  <petrov.a.v-14@yandex.ru>
-
 ### Технологии
-
 + React
 + Redux Toolkit
 + React Router
@@ -29,7 +23,6 @@ npm run dev
 + Vite
 + SCSS
 
-**GitHub**
-
-+ [Ссылка на опубликованный проект](https://petrov-andrey-dev.github.io/calendar/)
+### Опубликован
+[/petrov-andrey-dev.github.io/calendar/](https://petrov-andrey-dev.github.io/calendar/)
 

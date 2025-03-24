@@ -1,5 +1,5 @@
 # Проект: Календарь
-Решение к тестовому заданию [Задание 3 (***)](https://github.com/GPB-COS/test-work-react/tree/master/test%203)
+PET-проект календарь на TypeScript и Redux Toolkit.
 
 ## Запуск проекта 
 ```
